@@ -39,7 +39,7 @@ export default () => {
     );
   };
 
-  const clickLike = async (e: PointerEvent, likePostId: number) => {
+  const clickLike = async (e: any, likePostId: number) => {
     try {
       e.preventDefault();
       await fetch("/api/liked", {
